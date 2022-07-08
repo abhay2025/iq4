@@ -1,0 +1,159 @@
+<%- include('../partials/additionalcss.ejs') %>
+    <%- include('../partials/secondnav.ejs') %>
+        <div class="container">
+
+            <div>
+                <h1 style="color:red;">ICSE Class 10th Physics</h1>
+                <p style="font-size:medium;">
+                    <b>Physics is the study of energy and matter in space and time. It deals with how the fundamental
+                        constituents
+                        of the universe interact.Physics starts emerging as one of the Science disciplines at this level
+                        and
+                        its
+                        beauty lies in its numerical problems. In grade-10, students get to explore the fundamental laws
+                        and
+                        principles of Physics.
+                        IQ Classes content aims to develop an in-depth understanding of these fundamentals and also make
+                        sure
+                        that students get enough material for practice and reinforcement.
+                    </b>
+                </p>
+                <p><b>The ICSE Class 10 Physics syllabus includes concepts like measurements, Motion in one dimension,
+                        Laws
+                        of
+                        Motion, pressure in fluids, Archimedes' principle, and many more.
+
+                    </b></p>
+
+            </div>
+            <div class="info d-none">
+                <span>class10ICSE/class10phyimg</span>
+                <div>
+                    <h1>Force</h1>
+                </div>
+                <div>
+                    <h1>Work,Energy,Power</h1>
+                </div>
+                <div>
+                    <h1>Machines</h1>
+                </div>
+                <div>
+                    <h1>Refraction of light at Plane Surfaces</h1>
+                </div>
+                <div>
+                    <h1>Refraction through a Lens</h1>
+                </div>
+                <div>
+                    <h1>Spectrum</h1>
+                </div>
+                <div>
+                    <h1>Sound</h1>
+                </div>
+                <div>
+                    <h1>CurrenElectricity</h1>
+                </div>
+                <div>
+                    <h1>Household Circuits</h1>
+                </div>
+                <div>
+                    <h1>Electro-magnetism</h1>
+                </div>
+                <div>
+                    <h1>Radioactivity</h1>
+                </div>
+            </div>
+
+            <!-- PHYSICS SUBJECTS -->
+            <div class="container contain bg-light learnblock" style="margin-top: 2em;">
+                <div class="row row-cols-1 row-cols-md-3 g-3 mb-3 m-auto allcard">
+
+                </div>
+            </div>
+
+            <div>
+                <h5 style="color:red;">What are the chapters included in class 10 Physics ICSE?</h5>
+                <p><b>All chapters of class 10 Physics ICSE, in the prescribed syllabus by the ICSE
+                        <a style="text-decoration: none;"
+                            href="https://www.cisce.org/publicationdetail.aspx?id=92">Click
+                            here </a>
+                        to get more detailed description of your syllabus.
+
+                        Every chapter have their importance and weightage.
+                        Each chapter has various concepts based on NCERT pattern and plays a specific role in
+                        improving your
+                        skills.
+                        Physics chapter list will give you an idea of the entire course coverage. </b></p>
+                <h5 style="color:red;">How to start for class 10 Physics ICSE?</h5>
+                <p><b> Firstly you should clearly understand the syllabus and course structure. Teachers will help
+                        you in
+                        giving
+                        brief introduction about your syllabus and Question paper pattern
+                        and will help you to improve your learning levels . <a style="text-decoration: none;"
+                            href="https://www.cisce.org/icse_X_Specimen_Question_Papers.aspx">Click here for
+                            specimen
+                            question papers</a>. </b></p>
+                <p><b>Slowly understands the concepts and initiate a habit of practice.
+                        Always try to clear the concepts of Class 10 Physics ICSE that you do not understand.
+                        Avoid skipping topics or concepts. Revise crucial topics daily.
+
+                    </b></p>
+                <h5 style="color:red;">How can you score good marks in the Physics class 10 ICSE?</h5>
+                <p><b>If you are well aware of the core concepts then it becomes very easy to attempt problems asked
+                        on
+                        those concepts. This also motivates you to gain knowledge and excel in studies. </b>
+
+                <p>
+                    <li><b> Practice as many numerical problems as possible from ICSE Physics sample papers.</b>
+                    </li>
+                    <li><b>Write down definitions of laws, principles, and theories for continuous reference.</b>
+                    </li>
+                    <li> <b> Create a list of problematic numerical problems at the end of each chapter or
+                            topic.</b></li>
+
+
+                    </b>
+                </p>
+
+
+
+
+                </p>
+                <h5 style="color:red;">ICSE Class 10 prescribed Physics Books</h5>
+                <p><b>Here is a list of the ICSE books for Class 10 which students can refer while preparing for
+                        their
+                        Physics exam which is updated according to the latest ICSE syllabus.
+                        Students of Class 10 should start their preparation by studying from the textbook of ICSE
+                        Class 10
+                        Physics as it covers the entire syllabus and gives the ample number of questions to
+                        practice.
+                    </b></p>
+
+
+                <li><b>A New Approach to ICSE Physics Part 2 for Class 10</b></li>
+                <li><b>Concise Physics for ICSE Class 10</b></li>
+                <li><b>S.Chand ICSE Physics Book 2 for Class 10</b></li>
+
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            function fli(e) {
+
+                let allcard = $('.thecard');
+
+                let click = false;
+                let card = e.children[0];
+                let image = e.children[0].children[0].children[1]
+                let buttons = e.children[0].children[1].children[1].children[0]
+
+
+                $(card).toggleClass('rotate')
+                setTimeout(() => {
+                    $(image).toggleClass('d-none')
+                }, 200);
+            }
+        </script>
+
+        <%- include('../partials/makecard.ejs') %>

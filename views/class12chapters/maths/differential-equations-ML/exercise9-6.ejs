@@ -1,0 +1,667 @@
+<style>
+    .col {
+        background-image: url('img/textwater.png');
+    }
+
+    .img-fluid {
+        width: 70%;
+    }
+
+    @media screen and (max-width: 768px) {
+        .img-fluid {
+            width: 100%;
+        }
+    }
+
+    .frac {
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        letter-spacing: 0.001em;
+        text-align: center;
+    }
+
+    .frac>span {
+        display: block;
+        padding: 0.1em;
+    }
+
+    .frac span.bottom {
+        border-top: thin solid black;
+    }
+
+    .frac span.symbol {
+        display: none;
+    }
+
+    .integration {
+        font-size: 40px;
+    }
+</style>
+</head>
+</head>
+
+<body class="bg-light">
+
+    <!-- header -->
+    <h1 class="text-center text-danger">CLASS 12 DIFFERENTIAL EQUATION EXERCISE 9.6</h1>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h5 class="text-danger"><span class="fw-bold">Q1</span>
+                    When a differential equation is called homogeneous?
+                </h5>
+
+
+                <h5><span class="text-success">Solution </span></h5>
+                <h5 class="text-dark">
+                    A differential Equation of form <div class="frac">
+                        <span>
+                            dy
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">dx</span>
+                    </div> =f(x,y) or
+                    <div class="frac">
+                        <span>
+                            dy
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">dx</span>
+                    </div> = g(x,y) is said to be homogeneous D.E. If f(x,y) and g(x,y) are homogenous functions of
+                    degree hero.
+
+                </h5>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h5 class="text-danger"><span class="fw-bold">Q2</span>
+                    Which of the following differential equations are homogeneous?
+                    <ol type="i">
+                        <li>(x - y)
+                            <div class="frac">
+                                <span>
+                                    dy
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">dx</span>
+                            </div>=x+2y
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img2(i).jpg" alt="" class="img-fluid">
+                        </li>
+
+                        <li>y-x<div class="frac">
+                                <span>
+                                    dy
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">dx</span>
+                            </div>=x+y<div class="frac">
+                                <span>
+                                    dy
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">dx</span>
+                            </div>
+
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img2(ii).jpg" alt="" class="img-fluid">
+                        </li>
+
+                        <li>
+                            (x<sup>2</sup> + 3xy - 4y<sup>2</sup>) dx - x (x<sup>2</sup> + 2y) dy = 0
+
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img2(iii).jpg" alt="" class="img-fluid">
+                        </li>
+                        <li>x<div class="frac">
+                                <span>
+                                    dy
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">dx</span>
+                            </div> +y=xtan<sup>-1</sup>
+                            <div class="frac">
+                                <span>
+                                    y
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">x</span>
+                            </div>
+
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img2(iv).jpg" alt="" class="img-fluid">
+                        </li>
+                        <li>x cos(<div class="frac">
+                                <span>
+                                    y
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">x</span>
+                            </div>) <div class="frac">
+                                <span>
+                                    dy
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">dx</span>
+                            </div> =y cos (<div class="frac">
+                                <span>
+                                    y
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">x</span>
+                            </div>) -3x<sup>2</sup>
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img2(v).jpg" alt="" class="img-fluid">
+                        </li>
+                        <li>x<div class="frac">
+                                <span>
+                                    dy
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">dx</span>
+                            </div> -y=&radic;x<sup>2</sup> +y<sup>2</sup>
+
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img2(vi).jpg" alt="" class="img-fluid">
+                        </li>
+                        <li>(x<sup>2</sup> +y<sup>2</sup>sin<div class="frac">
+                                <span>
+                                    x
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">y</span>
+                            </div>)<div class="frac">
+                                <span>
+                                    dy
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">dx</span>
+                            </div> =2xy e<sup>x/y</sup>
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img2(vii).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img2(vii)-1.jpg" alt="" class="img-fluid">
+
+                        </li>
+                        <li>2y e<sup>1/y</sup> dx + (y-2x e<sup>1/y</sup> ) dy=0
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img2(viii).jpg" alt="" class="img-fluid">
+                        </li>
+                        <li>ydx +xlog (<div class="frac">
+                                <span>
+                                    y
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">x</span>
+                            </div>)dy-2x dy=0
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img2(ix).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img2(ix)-1.jpg" alt="" class="img-fluid">
+
+                        </li>
+                    </ol>
+                </h5>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h5 class="text-danger"><span class="fw-bold">Q3</span>
+                    <ol type="i">
+                        <li>
+                            <div class="frac">
+                                <span>
+                                    dy
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">dx</span>
+                            </div> = <div class="frac">
+                                <span>
+                                    x+y
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">x</span>
+                            </div>
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img3(i).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img3(i)-1.jpg" alt="" class="img-fluid">
+
+                        </li>
+
+                        <li>
+                            (x-y)dy - (x+y)dx=0
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img3(ii).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img3(ii)-1.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img3(ii)-2.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img3(ii)-3.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img3(ii)-4.jpg" alt="" class="img-fluid">
+                        </li>
+
+                    </ol>
+                </h5>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h5 class="text-danger"><span class="fw-bold">Q4</span>
+                    <ol type="i">
+                        <li>
+                            (x-y) y<sup>'</sup>=x+3y
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img4(i).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img4(i)-1.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img4(i)-2.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img4(i)-3.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img4(i)-4.jpg" alt="" class="img-fluid">
+
+                        </li>
+
+                        <li>
+                            (x+2y)dx-(2x-y)dy=0
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img4(ii).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img4(ii)-1.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img4(ii)-2.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img4(ii)-3.jpg" alt="" class="img-fluid">
+
+                        </li>
+
+                    </ol>
+                </h5>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h5 class="text-danger"><span class="fw-bold">Q5</span>
+                    <ol type="i">
+                        <li>
+                            (y<sup>2</sup>-2xy)dx=(x<sup>2</sup>-2xy)dy
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img5(i).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img5(i)-1.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img5(i)-2.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img5(i)-3.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img5(i)-4.jpg" alt="" class="img-fluid">
+
+                        </li>
+
+                        <li>
+                            2xydx+(x<sup>2</sup>+2y<sup>2</sup>)dy=0
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img5(ii).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img5(ii)-1.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img5(ii)-2.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img5(ii)-3.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img5(ii)-4.jpg" alt="" class="img-fluid">
+
+                        </li>
+
+                    </ol>
+                </h5>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h5 class="text-danger"><span class="fw-bold">Q6</span>
+                    <ol type="i">
+                        <li>
+                            (x<sup>2</sup>-y<sup>2</sup>)dx+2xydy=0
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img6(i).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img6(i)-1.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img6(i)-2.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img6(i)-3.jpg" alt="" class="img-fluid">
+
+                        </li>
+
+                        <li>
+                            x<sup>2</sup>
+                            <div class="frac">
+                                <span>
+                                    dy
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">dx</span>
+                            </div> = x<sup>2</sup> +xy+y<sup>2</sup>
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img6(ii).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img6(ii)-1.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img6(ii)-2.jpg" alt="" class="img-fluid">
+
+                        </li>
+
+                    </ol>
+                </h5>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h5 class="text-danger"><span class="fw-bold">Q7</span>
+                    <ol type="i">
+                        <li>
+                            x<div class="frac">
+                                <span>
+                                    dy
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">dx</span>
+                            </div> + <div class="frac">
+                                <span>
+                                    y<sup>2</sup>
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">x</span>
+                            </div> =y
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img7(i).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img7(i)-1.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img7(i)-2.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img7(i)-3.jpg" alt="" class="img-fluid">
+
+                        </li>
+
+                        <li>
+                            x<div class="frac">
+                                <span>
+                                    dy
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">dx</span>
+                            </div> =y(log y -logx +1)
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img7(ii).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img7(ii)-1.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img7(ii)-2.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img7(ii)-3.jpg" alt="" class="img-fluid">
+
+                        </li>
+
+                    </ol>
+                </h5>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h5 class="text-danger"><span class="fw-bold">Q8</span>
+                    <ol type="i">
+                        <li>
+                            <div class="frac">
+                                <span>
+                                    dy
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">dx</span>
+                            </div> = <div class="frac">
+                                <span>
+                                    y
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">x</span>
+                            </div> + <div class="frac">
+                                <span>
+                                    &radic; x<sup>2</sup> - y<sup>2</sup>
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">x</span>
+                            </div>,x>0
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img8(i).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img8(i)-1.jpg" alt="" class="img-fluid">
+
+                        </li>
+
+                        <li>
+                            x<div class="frac">
+                                <span>
+                                    dy
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">dx</span>
+                            </div> -y=2 &radic;y<sup>2</sup> -x<sup>2</sup> ,x>0
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img8(ii).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img8(ii)-1.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img8(ii)-2.jpg" alt="" class="img-fluid">
+
+                        </li>
+
+                    </ol>
+                </h5>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h5 class="text-danger"><span class="fw-bold">Q9</span>
+                    (<div class="frac">
+                        <span>
+                            y
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">x</span>
+                    </div>cos<div class="frac">
+                        <span>
+                            y
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">x</span>
+                    </div>) dx- (<div class="frac">
+                        <span>
+                            x
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">y</span>
+                    </div>sin <div class="frac">
+                        <span>
+                            y
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">x</span>
+                    </div>+cos <div class="frac">
+                        <span>
+                            y
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">x</span>
+                    </div>) dy=0
+                </h5>
+
+                <h5><span class="text-success">Solution </span></h5>
+                <img src="class12ISCchap/maths/deimg/9-6/img9.jpg" alt="" class="img-fluid">
+                <img src="class12ISCchap/maths/deimg/9-6/img9-1.jpg" alt="" class="img-fluid">
+                <img src="class12ISCchap/maths/deimg/9-6/img9-2.jpg" alt="" class="img-fluid">
+                <img src="class12ISCchap/maths/deimg/9-6/img9-3.jpg" alt="" class="img-fluid">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h5 class="text-danger"><span class="fw-bold">Q10</span>
+                    2y e<sup>x/y</sup> dx+(y-2x e<sup>x/y</sup>)dy=0
+                </h5>
+
+                <h5><span class="text-success">Solution </span></h5>
+                <img src="class12ISCchap/maths/deimg/9-6/img10.jpg" alt="" class="img-fluid">
+                <img src="class12ISCchap/maths/deimg/9-6/img10-1.jpg" alt="" class="img-fluid">
+                <img src="class12ISCchap/maths/deimg/9-6/img10-2.jpg" alt="" class="img-fluid">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h5 class="text-danger"><span class="fw-bold">Q11</span>
+                    Solve the differential equation (x + y) dy + (x - y) dx = 0, given that y =1 when x = 1
+                </h5>
+
+                <h5><span class="text-success">Solution </span></h5>
+                <img src="class12ISCchap/maths/deimg/9-6/img11.jpg" alt="" class="img-fluid">
+                <img src="class12ISCchap/maths/deimg/9-6/img11-1.jpg" alt="" class="img-fluid">
+                <img src="class12ISCchap/maths/deimg/9-6/img11-2.jpg" alt="" class="img-fluid">
+                <img src="class12ISCchap/maths/deimg/9-6/img11-3.jpg" alt="" class="img-fluid">
+                <img src="class12ISCchap/maths/deimg/9-6/img11-4.jpg" alt="" class="img-fluid">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h5 class="text-danger"><span class="fw-bold">Q12</span>
+                    Solve the differential equation (x<sup>2</sup> - y<sup>2</sup>) dx + 2xy dy = 0, given that y = 1
+                    when x = 1
+                </h5>
+
+                <h5><span class="text-success">Solution </span></h5>
+                <img src="class12ISCchap/maths/deimg/9-6/img12.jpg" alt="" class="img-fluid">
+                <img src="class12ISCchap/maths/deimg/9-6/img12-1.jpg" alt="" class="img-fluid">
+                <img src="class12ISCchap/maths/deimg/9-6/img12-2.jpg" alt="" class="img-fluid">
+                <img src="class12ISCchap/maths/deimg/9-6/img12-3.jpg" alt="" class="img-fluid">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h5 class="text-danger"><span class="fw-bold">Q13</span>
+                    Find particular solutions of the following differential equations :
+                    <ol type="i">
+                        <li>2xy +y<sup>2</sup> -2x<sup>2</sup>
+                            <div class="frac">
+                                <span>
+                                    dy
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">dx</span>
+                            </div> = 0, given that y (1) = 2
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img13(i).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img13(i)-1.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img13(i)-2.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img13(i)-3.jpg" alt="" class="img-fluid">
+
+                        </li>
+                        <li>
+                            <div class="frac">
+                                <span>
+                                    dy
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">dx</span>
+                            </div> -<div class="frac">
+                                <span>
+                                    y
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">x</span>
+                            </div> +cosec (<div class="frac">
+                                <span>
+                                    y
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">x</span>
+                            </div>) =0,given that y=0 when x=1
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img13(ii).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img13(ii)-1.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img13(ii)-2.jpg" alt="" class="img-fluid">
+                        </li>
+
+                        <li>x e<sup>y/x</sup>-y +x<div class="frac">
+                                <span>
+                                    dy
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">dx</span>
+                            </div> =0,given that y(e)=0
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img13(iii).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img13(iii)-1.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img13(iii)-2.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img13(iii)-3.jpg" alt="" class="img-fluid">
+                        </li>
+                    </ol>
+                </h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h5 class="text-danger"><span class="fw-bold">Q14</span>
+                    Show that the following differential equations are homogeneous and find their particular solutions :
+                    <ol type="i">
+                        <li>x <div class="frac">
+                                <span>
+                                    dy
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">dx</span>
+                            </div> sin(<div class="frac">
+                                <span>
+                                    y
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">x</span>
+                            </div>) +x -y sin <div class="frac">
+                                <span>
+                                    y
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">x</span>
+                            </div> =0,given that x=1 when y= &pi;/2
+
+                            <h5><span class="text-success">Solution </span></h5>
+                            <img src="class12ISCchap/maths/deimg/9-6/img14(i).jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img14(i)-1.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img14(i)-2.jpg" alt="" class="img-fluid">
+                            <img src="class12ISCchap/maths/deimg/9-6/img14(i)-3.jpg" alt="" class="img-fluid">
+
+                        </li>
+                        <li>
+                            (x e<sup>y/x</sup>+ y)dx=x dy,given that y=0 when x=1
+                        </li>
+                    </ol>
+                </h5>
+
+                <h5><span class="text-success">Solution </span></h5>
+                <img src="class12ISCchap/maths/deimg/9-6/img14(ii).jpg" alt="" class="img-fluid">
+                <img src="class12ISCchap/maths/deimg/9-6/img14(ii)-1.jpg" alt="" class="img-fluid">
+                <img src="class12ISCchap/maths/deimg/9-6/img14(ii)-2.jpg" alt="" class="img-fluid">
+                <img src="class12ISCchap/maths/deimg/9-6/img14(ii)-3.jpg" alt="" class="img-fluid">
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

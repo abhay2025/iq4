@@ -1,0 +1,128 @@
+<script>
+    let main = $('.allcard')
+    let cardbody = $('.car-body')
+    let info = $('.info div')
+    let locate = $('.info span').text()
+    // console.log(locate);
+
+    // console.log(cardbody);
+    // for (let i = 0; i < info.length; i++) {
+    //     console.log(info[i].children[1]);
+    // }
+    let subClass = locate.substring((locate.indexOf("/") + 1), locate.length - 3)
+    // console.log(subClass);
+
+    const dat2 = () => {
+        switch (subClass) {
+            case 'class12maths': return ` <a   href = "/commingsoon"  class="btn btn-danger btt col-lg-6 m-2"  >Imp Questions</a >
+                <a href="/commingsoon" class="btn btn-primary bt col-lg-6 m-2 col-6" > ML Aggarwal</a> `
+
+            case 'class12phy': return ` <a   href = "/commingsoon"  class="btn btn-danger bt col-lg-4 m-2 col-4" > Notes</a >
+            <a href="/commingsoon"  class="btn btn-primary btt col-lg-4 m-2">Numericals</a>
+            <a href="/commingsoon"  class="btn btn-primary btt  m-2 col-lg-4">Nootan</a> `
+
+            case 'class12bio': return ` <a   href = "/commingsoon" class="btn btn-danger btt m-1 col-lg-3" style="width: 46%;"> Notes</a >
+            <a href="/commingsoon" class="btn btn-primary btt m-1 col-lg-3" style="width: 46%;">NCERT</a> `
+
+            case 'class12chem': return ` <a   href = "/commingsoon" class="btn btn-danger btt col-lg-4 m-2" > Imp Question</a >
+            <a href="/commingsoon" class="btn btn-primary bt col-lg-4 m-2">Nootan</a> 
+            <a href="/commingsoon" class="btn btn-warning btt col-lg-4 m-2">NCERT</a> `
+
+            // class 11
+            case 'class11maths': return ` <a   href = "/commingsoon"  class="btn btn-danger btt col-lg-6 m-2"  >Imp Questions</a >
+                <a href="/commingsoon" class="btn btn-primary btt col-lg-6 m-2" > ML Aggerwal</a> `
+
+            case 'class11physics': return ` <a   href = "/commingsoon"  class="btn btn-danger bt col-lg-4 m-2" > Notes</a >
+            <a href="/commingsoon"  class="btn btn-primary btt col-lg-4 m-2">Numericals</a>
+            <a href="/commingsoon"  class="btn btn-primary btt  m-2 col-lg-4">Nootan</a> `
+
+            case 'class11biology': return ` <a   href = "/commingsoon" class="btn btn-danger btt m-1 col-lg-3" style="width: 46%;"> Notes</a >
+            <a href="/commingsoon" class="btn btn-primary btt m-1 col-lg-3" style="width: 46%;">NCERT</a> `
+
+            case 'class11chemistry': return ` <a   href = "/commingsoon" class="btn btn-danger btt col-lg-4 m-2"  > Imp Question</a >
+            <a href="/commingsoon" class="btn btn-primary bt col-lg-4 m-2">Nootan</a> 
+            <a href="/commingsoon" class="btn btn-primary btt col-lg-4 m-2">NCERT</a> `
+
+            // class 10
+
+            case 'class10maths': return `  <a   href = "/commingsoon" class="btn btn-primary btt col-lg-4 m-2"  > Imp Question</a > 
+                <a   href = "/commingsoon"  class="btn btn-danger btt col-lg-6 m-2">NCERT</a >
+               `
+
+            case 'class10phy': return ` 
+            <a   href = "/commingsoon" class="btn btn-danger btt col-lg-4 m-2"  > Imp Question</a >
+                <a   href = "/commingsoon"  class="btn btn-primary bt col-lg-4 m-2" > Notes</a >
+            
+            <a href="/commingsoon"  class="btn btn-primary btt  m-2 col-lg-4">Selina</a> `
+
+            case 'class10biology': return `
+            <a   href = "/commingsoon" class="btn btn-primary btt col-lg-4 m-2"  > Imp Question</a > 
+             <a   href = "/commingsoon" class="btn btn-danger btt m-1 col-lg-3" style="width: 46%;"> Notes</a >
+            `
+
+            case 'class10chemistry': return ` <a   href = "/commingsoon" class="btn btn-danger btt col-lg-4 m-2"  > Imp Question</a >
+            <a href="/commingsoon" class="btn btn-primary bt col-lg-4 m-2">Notes</a> 
+            <a href="/commingsoon" class="btn btn-primary btt col-lg-4 m-2">V.J Dalal</a> `
+
+            // class9
+            case 'class9maths': return `  <a   href = "/commingsoon" class="btn btn-primary btt col-lg-4 m-2"  > Imp Question</a > 
+                <a   href = "/commingsoon"  class="btn btn-danger btt col-lg-6 m-2">NCERT</a >
+               `
+
+            case 'class9physics': return ` 
+            <a   href = "/commingsoon" class="btn btn-danger btt col-lg-4 m-2"  > Imp Question</a >
+                <a   href = "/commingsoon"  class="btn btn-primary bt col-lg-4 m-2" > Notes</a >
+            
+            <a href="/commingsoon"  class="btn btn-primary btt  m-2 col-lg-4">Selina</a> `
+
+            case 'class9biology': return `
+            <a   href = "/commingsoon" class="btn btn-primary btt col-lg-4 m-2"  > Imp Question</a > 
+             <a   href = "/commingsoon" class="btn btn-danger btt m-1 col-lg-3" style="width: 46%;"> Notes</a >
+            `
+
+            case 'class9chemistry': return ` <a   href = "/commingsoon" class="btn btn-danger btt col-lg-4 m-2"  > Imp Question</a >
+            <a href="/commingsoon" class="btn btn-primary bt col-lg-4 m-2">Notes</a> 
+            <a href="/commingsoon" class="btn btn-primary btt col-lg-4 m-2">V.J Dalal</a> `
+
+        }
+    }
+    // console.log(dat2);
+    for (let i = 0; i < info.length; i++) {
+        let img = $(info[i].children[1]).text();
+
+        let nam = $(info[i].children[0]).text();
+
+
+
+
+        let dat = `<div class="col">
+
+<div class="card h-100 cardmain" onclick="fli(this)"
+style=" background-image: linear-gradient(to top left ,#dbd6da,#fae4f9);">
+<div class="thecard">
+<div class="thefront row p-2">
+    <h1 class="h-8 head"><b>`+ nam + `</b></h1>
+    <img src="`+ locate + `/chap` + (i + 1) + `.png" class="card-img-top image" alt="..."  height="160px;">
+</div>
+<div class="theback p-3">
+    <h3>Please Select the Option: </h3>
+    <div class="mt-4 " style="margin: auto">
+    <div class="car-body row">`+
+            dat2() +
+            `
+        </div>
+        </div >
+</div >
+</div >
+</div >
+</div >`
+
+
+
+
+        main.append(dat);
+    }
+
+
+
+</script>

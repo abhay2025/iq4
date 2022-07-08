@@ -1,0 +1,154 @@
+<%- include('../partials/additionalcss.ejs') %>
+    <%- include('../partials/secondnav.ejs') %>
+        <div class="container">
+            <div>
+                <h1 style="color:red;">ICSE Class 10th Biology</h1>
+                <p style="font-size:medium;">
+                    <b>Biology is a natural science that studies life and living organisms; that is, it is the science
+                        of life.
+                        of the universe interact.
+                        Biology starts emerging as one of the Science disciplines at this level. In grade-10, students
+                        get to explore about themselves as well about the outside world.
+                        IQ Classes content aims to help students in this exploration and also make sure
+                        that students to excel in the subject.
+                    </b>
+                </p>
+                <p><b> ICSE Class 10 Biology syllabus includes concepts on Cell- cell division, transpiration, genetics,
+                        endocrine system, population, absorption by roots and many more.
+
+                    </b></p>
+
+            </div>
+
+            <div class="info d-none">
+                <span>class10ICSE/class10biologyimg</span>
+                <div>
+                    <h1>Cell</h1>
+                </div>
+                <div>
+                    <h1>Structure of Chromosomes</h1>
+                </div>
+                <div>
+                    <h1>Genetics</h1>
+                </div>
+                <div>
+                    <h1>Absorption by Roots</h1>
+                </div>
+                <div>
+                    <h1>Transpiration</h1>
+                </div>
+                <div>
+                    <h1>Photosynthesis</h1>
+                </div>
+                <div>
+                    <h1>Chemical Coordination in Plants</h1>
+                </div>
+                <div>
+                    <h1>The Circulatory System</h1>
+                </div>
+                <div>
+                    <h1>The Excretory System</h1>
+                </div>
+                <div>
+                    <h1>The Nervous System</h1>
+                </div>
+                <div>
+                    <h1>Sense Organs</h1>
+                </div>
+                <div>
+                    <h1>The Endocrine System</h1>
+                </div>
+                <div>
+                    <h1>The Reproductive System</h1>
+                </div>
+                <div>
+                    <h1>Human Evolution</h1>
+                </div>
+                <div>
+                    <h1>Population</h1>
+                </div>
+                <div>
+                    <h1>Pollution</h1>
+                </div>
+            </div>
+            <!-- CHEMISTRY SUBJECTS -->
+            <div class="container contain bg-light learnblock" style="margin-top: 2em;">
+                <div class="row row-cols-1 row-cols-md-3 g-3 mb-3 m-auto allcard">
+
+                </div>
+            </div>
+
+            <div>
+                <h5 style="color:red;">What are the chapters included in class 10 Biology ICSE?</h5>
+                <p><b>All chapters of class 10 Biology , in the prescribed syllabus by the ICSE
+                        <a style="text-decoration: none;"
+                            href="https://www.cisce.org/publicationdetail.aspx?id=92">Click here </a> to get more
+                        detailed description of your syllabus.
+
+                        Every chapter have their importance and weightage.
+                        Each chapter has various concepts based on NCERT pattern and plays a specific role in improving
+                        outcomes.
+                        ICSE Class 10th biology chapter list will give you an idea of the entire course coverage. </b>
+                </p>
+                <h5 style="color:red;">How to start for class 10 Biology ICSE?</h5>
+                <p><b> For Class 10 Biology ICSE, one should clearly understand the syllabus and course structure first.
+                        Teachers will help you in giving
+                        brief introduction about your syllabus and Question paper pattern
+                        and will help you to improve your learning levels . <a style="text-decoration: none;"
+                            href="https://www.cisce.org/icse_X_Specimen_Question_Papers.aspx">Click here for specimen
+                            question papers</a>. </b></p>
+                <p><b>Slowly understands the concepts and initiate a habit of practice. Practicing and revising all
+                        these topics from initial will help you to understand the concepts with clarity.
+                        Always try to clear the concepts of Class 10 Biology ICSE that you do not understand.
+                        Avoid skipping topics or concepts. Revise crucial topics daily.
+
+                    </b></p>
+                <h5 style="color:red;">How can you score good marks in the Biology class 10 ICSE?</h5>
+                <p><b>
+                        Since there are no numerical problems to save you from the theory questions, knowledge of
+                        different systems like respiratory, endocrine, excretory, circulatory and others is going to
+                        help you big time.
+                        Once a learner is able to know what is happening around, can relate to the theories learnt in
+                        the books.
+                    </b></p>
+                <p>
+                    <li><b>Pay close attention to the definitions</b></li>
+                    <li><b>Know a little about all the chapters</b></li>
+                    <li><b>Practicing diagrams is going to help you in a big way as they are easy to score in.</b></li>
+                </p>
+                <h5 style="color:red;">ICSE Class 10 prescribed Biology Books</h5>
+                <p><b>Here is a list of the ICSE books for Class 10 which students can refer while preparing for their
+                        Biology exam which is updated according to the latest ICSE syllabus.
+                        Students of Class 10 should start their preparation by studying from the textbook of ICSE Class
+                        10 Biology as it covers the entire syllabus and gives the ample number of questions to practice.
+                    </b></p>
+                <p>
+                    <li><b>A textbook Class 10 Biology</b></li>
+                    <li><b>Concise ICSE Textbook for Class 10 Biology</b></li>
+
+                </p>
+
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            function fli(e) {
+
+                let allcard = $('.thecard');
+
+                let click = false;
+                let card = e.children[0];
+                let image = e.children[0].children[0].children[1]
+                let buttons = e.children[0].children[1].children[1].children[0]
+
+
+                $(card).toggleClass('rotate')
+                setTimeout(() => {
+                    $(image).toggleClass('d-none')
+                }, 200);
+            }
+        </script>
+
+        <%- include('../partials/makecard.ejs') %>

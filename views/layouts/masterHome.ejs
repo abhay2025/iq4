@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of IQ -->
+    <title>
+        IQ Classes
+    </title>
+
+
+    <link rel="shortcut icon" href="img/568.png" type="image/x-icon" />
+
+    <!-- AOS(Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- 
+    BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/c123228cd1.js" crossorigin="anonymous"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Monoton&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400&family=Merriweather+Sans&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="common/new.css">
+
+    <!-- INTERNAL CSS -->
+    <style>
+        @media only screen and (max-width:760px) {
+            .anclog {
+                max-width: 78% !important;
+                margin-bottom: 0.5em;
+            }
+
+            .logim {
+                max-width: 55% !important;
+            }
+
+        }
+
+        .anclog {
+            max-width: 12.9%;
+        }
+
+        .logim {
+            max-width: 121%;
+        }
+
+        /** For mobile devices **/
+        @media only screen and (max-width:760px) {
+            .custom-shape-divider-top-1630622741 svg {
+                width: calc(102% + 1.3px);
+                height: 218px;
+            }
+
+            .next,
+            .prev {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            .item {
+                display: block !important;
+            }
+
+            iframe {
+                width: 100%;
+                height: 326px;
+            }
+
+            #part6 .carousel-cell {
+                margin-right: 7em !important;
+                width: 44%;
+                height: 340px;
+            }
+
+            #part3 .row {
+                width: 74%;
+            }
+
+            .time-img {
+                width: 10rem;
+                height: 10rem;
+            }
+
+            #part3 .content h2 {
+                font-size: 2.1rem;
+            }
+
+            .special {
+                height: 18em;
+            }
+
+            .custom-shape-divider-top-1630622741 svg {
+                width: calc(258% + 20.3px) !important;
+                height: 484px !important;
+            }
+
+            .geo-shapes img {
+                animation: geo 12s linear infinite;
+            }
+
+            @keyframes geo {
+                0% {
+                    transform: translateY(0);
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 1;
+                }
+
+                70% {
+                    opacity: 1;
+                }
+
+                100% {
+                    transform: translateY(300vh);
+                    opacity: 1;
+                }
+            }
+
+            .carousel-control-prev {
+                display: none;
+            }
+
+            .pre:hover {
+                transform: translateX(15px);
+            }
+
+            .nex:hover {
+                transform: translateX(-15px);
+            }
+
+            .carousel-control-next {
+                display: none;
+            }
+
+            .carousel-indicators {
+                z-index: 1;
+            }
+
+        }
+
+        .ss {
+            width: 49em;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            font-size: 1.1em;
+        }
+
+        .correct {
+            margin-left: 2em !important;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .correct {
+                margin-left: 0em !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP LABEL -->
+    <div class="top-bar">
+        <div class="row ">
+            <div class="col-lg-8 col-5">
+
+                <div class="social ms-3 me-3">
+                    <span style="color: white;font-size: 1.1em;font-weight: 600;">Follow Us:</span>
+                    <ul>
+                        <li>
+                            <!-- <a class="social-tag" href="https://www.youtube.com/channel/UCGCB1M7_8or7SO8jBSA9n6w/featured"><i
+                      class="fab  fa-youtube"></i></a> -->
+                            <a href="https://www.facebook.com/people/IQ-Classes/100057281447028/?__xts__[0]=68.ARDXv6U04V8VO0mYLanwwKDImK7gJWNGpY7GngoWW3cvhwlVpXnv86O6BZ6WQG46GxO02UnWShK3pn9N2wyp
+                      29TDgX3psXLMkJQCG5jWxFHgHRpIOfigdZSEOAvMZtxKZX8iDntlwfLyU6Y4leadYswG_LLUpJ9_BEC0lPmVQ
+                      8pBnAFIzhaSbmsXdMHZ-2b_FFqRipl7EgcQ_h1FrR-2WUnKCDxV492yAMkoQXZhNXFduMS0gvOM6-2LMENmn48EHT
+                      5nIBwzY3bMCHke2QF0phXNwQEnwhM81vfVwn6dlZxZMtUdzVRVzBYTRbQsfDLQPClwM-8EHbkPpKVkKlCtf2dx5dRf"
+                                class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/iqclasses/?hl=en" class="instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCGCB1M7_8or7SO8jBSA9n6w/featured"
+                                class="youtube"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-7">
+                <ul class="social-list d-sm-flex justify-content-evenly">
+                    <li>
+                        <a class=""
+                            href="https://www.google.com/maps/dir/26.8500992,81.002496/iq+classes/@26.8513615,80.9651166,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x399bfd30a72dfa5b:0x35c4b4954027142b!2m2!1d80.9631824!2d26.8582189"><i
+                                class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Parag Narain Road, Lucknow</a>
+                    </li>
+                    <div class="vertical-line"></div>
+                    <li>
+                        <a href="tel:7905529739"><i class="fas fa-solid fa-phone me-1"
+                                style="transform: rotate(100deg);"></i>
+                            7905529739,</a>
+                        <a href="tel:9839520987" class="d-inline-block ph2">9839520987</a>
+                    </li>
+                    <!-- <li>
+                <a href="tel:9839520987">9839520987</a>
+              </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+        <div class="container correct">
+            <a class="navbar-brand anclog" href="/"><img class="logim" src="img/NEWLOGO1.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="ss">
+                    <ul class="navbar-nav float-left">
+                        <li class="nav-item">
+                            <a class="nav-link hom" aria-current="page" href="/">Home</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="/commingsoon">Syllabus</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link gal" href="#gallery-base">Gallery</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle speci" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                aria-expanded="false"><i class="fas fa-caret-down"></i>
+                                Specimen
+                            </a>
+                            <ul class="dropdown-menu specim" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        2021-2022 &raquo;
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <li>
+                                            <a class="dropdown-item" href="/commingsoon">Term-1</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/specimensol">Term-2</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle studymat" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                                    class="fas fa-caret-down"></i>
+                                Study Material
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/class9">Class 9th ICSE</a></li>
+                                <li><a class="dropdown-item" href="/class10">Class 10th ICSE</a></li>
+                                <li><a class="dropdown-item" href="/class11">Class 11th ISC</a></li>
+                                <li><a class="dropdown-item" href="/class12">Class 12th ISC</a></li>
+
+                                <li><a class="dropdown-item" href="/commingsoon">Class 9th CBSE</a></li>
+                                <li><a class="dropdown-item" href="/commingsoon">Class 10th CBSE</a></li>
+                                <li><a class="dropdown-item" href="/commingsoon">Class 11th CBSE</a></li>
+                                <li><a class="dropdown-item" href="/commingsoon">Class 12th CBSE</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link con" href="#part7">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="enrol-button">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1"> Click Here</a>
+                </div>
+                <div class="login-user me-5" style="cursor: pointer;">
+                    <i class="fa fa-solid fa-user" style="font-size:1.4em;color: red;margin: auto;"></i>
+                    <span>Welcome</span>
+                    <span id="username">
+                        user
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- SCROLL To Top -->
+    <div class="sidebar-social">
+        <button id="btnScrollToTop" onclick="topFunction() " style="display: none;">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <a id="whatsapp-chat" href="https://api.whatsapp.com/send/?phone=919555484802&app_absent=0&lang=eng"
+            data-bs-target="_blank">
+            <i class="fa fa-brands fa-whatsapp" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <main>
+        <%- body %>
+    </main>
+
+    <!-- FOOTER -->
+    <section id="part7">
+        <div class="row" style="justify-content: space-around;">
+            <div class="col-lg-5 services">
+                <h2>Reach Us</h2>
+                <iframe class="frame"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.425360007304!2d80.96099371421445!3d26.858223668901264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd30a72dfa5b%3A0x35c4b4954027142b!2sIQ%20CLASSES!5e0!3m2!1sen!2sin!4v1643434358193!5m2!1sen!2sin"
+                    width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="col-lg-4 services">
+                <h2>SERVICES</h2>
+                <ul>
+                    <li>ACADEMIC</li>
+                    <li>ON-LINE PREPARATION</li>
+                    <li>FOUNDATION & CRASH COURSES</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 visit">
+                <h2>CONTACT</h2>
+                <div class="sub-visit">
+                    <address>
+                        B-54, Krishna Bhawan, Parag Narain Road,
+                        Near Butler Palace Colony Lucknow
+                    </address>
+                </div>
+                <div class="sub-visit">
+                    <address>
+                        Contact:+ 91790552 9739
+                    </address>
+                </div>
+                <div class="sub-visit">
+                    <address>Email:info@iqclasses.in</address>
+                </div>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    For Enqueries
+                </button>
+            </div>
+
+            <div class="social-footer" style="margin-top: 7em;">
+                <a href="https://www.facebook.com/people/IQ-Classes/100057281447028/?__xts__[0]=68.ARDXv6U04V8VO0mYLanwwKDImK7gJWNGpY7GngoWW3cvhwlVpXnv86O6BZ6WQG46GxO02UnWShK3pn9N2wyp
+                      29TDgX3psXLMkJQCG5jWxFHgHRpIOfigdZSEOAvMZtxKZX8iDntlwfLyU6Y4leadYswG_LLUpJ9_BEC0lPmVQ
+                      8pBnAFIzhaSbmsXdMHZ-2b_FFqRipl7EgcQ_h1FrR-2WUnKCDxV492yAMkoQXZhNXFduMS0gvOM6-2LMENmn48EHT
+                      5nIBwzY3bMCHke2QF0phXNwQEnwhM81vfVwn6dlZxZMtUdzVRVzBYTRbQsfDLQPClwM-8EHbkPpKVkKlCtf2dx5dRf"
+                    class="share-footer-icon-fb">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="" class="share-footer-icon-tweet">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCGCB1M7_8or7SO8jBSA9n6w/featured"
+                    class="share-footer-icon-youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+    </section>
+
+
+    <!-- FOOTER MODEL -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Contact <span
+                            style="font-size:2.75rem;color:#e31837;">Us</span></h3>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <!-- Forname -->
+                    <!-- <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-user icon"></i></span>
+                </div>
+                <input type="text" aria-label="First name" class="form-control" placeholder="first name">
+              </div> -->
+                    <div class="form-floating mb-5 input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" class="form-control gh" id="floatingName" placeholder="Username">
+                        <label for="floatingInput">First Name</label>
+                    </div>
+
+                    <!-- for telephone -->
+                    <!-- <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default"><i class="fas fa-phone-alt icon"></i></span>
+                </div>
+                <input type="tel" class="form-control" aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default" placeholder="Phone">
+              </div> -->
+                    <div class="form-floating mb-5 input-group">
+                        <i class="fas fa-phone-square-alt"></i>
+                        <input type="number" class="form-control gh" id="floatingPhoneNumber"
+                            placeholder="Phone Number">
+                        <label for="floatingPassword">Phone Number</label>
+                    </div>
+
+                    <!-- for email -->
+                    <!-- <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon2"><i class="fas fa-envelope icon"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Your Email" aria-label="Sizing example input"
+                  aria-describedby="basic-addon2">
+              </div> -->
+                    <div class="form-floating mb-5 input-group">
+                        <i class="fas fa-envelope icon"></i>
+                        <input type="email" class="form-control gh" id="floatingEmail" placeholder="Email">
+                        <label for="floatingPassword">Email Id</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger consub">SUBMIT</button>
+                    <button type="button" class="btn btn-outline-secondary conclose1">Close</button>
+                </div>
+                <div class="alert alert-danger d-none" role="alert" id="validationcon">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR MODEL -->
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        style="overflow: hidden;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h3 class="modal-title text-danger" exampleModalLabel>Register Now </h3> -->
+                    <button type="button" class="btn-close regclose"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="contact-form">
+                        <div class="contain">
+                            <div class="tabs">
+                                <label class="tab text active reg" for="signin"
+                                    style="font-family: 'Ubuntu', sans-serif;">
+                                    Register</label>
+                                <label class="tab text log" for="register" style="font-family: 'Ubuntu', sans-serif;">
+                                    Login</label>
+                            </div>
+                            <input id="signin" type="radio" name="tab" checked="checked" />
+                            <input id="register" type="radio" name="tab" />
+                            <div class="pages">
+                                <div class="page">
+                                    <div class="input">
+                                        <div class="form-floating mb-4 input-group">
+                                            <i class="fas fa-envelope icon"></i>
+                                            <input type="text" class="form-control gh text" id="floatName"
+                                                placeholder="text" style="height:60px;">
+                                            <label for="floatingName">Enter the Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="input">
+                                        <div class="form-floating mb-4 input-group">
+                                            <i class="fas fa-envelope icon"></i>
+                                            <input type="number" class="form-control gh text" id="floatNumber"
+                                                placeholder="number" style="height:60px;" maxlength="10"
+                                                title="Error Message">
+                                            <label for="floatingName">Enter PhoneNumber</label>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-outline-danger" style="border-radius: 21px;
+                                     
+                                    padding: 7px 24px 8px 17px;
+                                    margin-top: 6px;
+                                    margin-left: 11em" id="otpbtn">
+                                        Get OTP!
+                                    </button>
+                                    <div class="input">
+                                        <input class="text form-control gh" type="text" placeholder="Enter the OTP"
+                                            style="left:4px;border-radius:19px!important;cursor: no-drop;" id="floatOTP"
+                                            disabled>
+                                    </div>
+                                    <button class="btn btn-outline-danger" style="border-radius: 21px;
+                                     
+                                    padding: 7px 24px 8px 17px;
+                                    margin-top: 1em;
+                                    margin-left: 11.5em" id="verifybtn">
+                                        Verify
+                                    </button>
+                                    <div class="alert alert-danger mt-2 d-none" id="regval" role="alert">
+
+                                    </div>
+
+                                    <button type="button" class="sub btn btn-danger mt-4"
+                                        style="width:100%;display:block;">Submit</button>
+                                </div>
+                                <div class="page signup mt-5">
+
+                                    <div class="input">
+                                        <div class="form-floating mb-4 input-group">
+                                            <i class="fas fa-envelope icon"></i>
+                                            <input type="number" class="form-control gh text" id="floatingNumberlogin"
+                                                placeholder="number" style="height:60px;">
+                                            <label for="floatingName">Enter PhoneNumber</label>
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-danger d-none" role="alert" id="loginaler">
+
+                                    </div>
+
+                                    <button class="btn btn-lg btn-outline-danger" style="display: flex;margin: auto;"
+                                        id="loginsub">Submit</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+    <!-- BOOTSTRAP JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+
+    <!-- AOS JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- AOS  SCRIPT-->
+    <script>
+        AOS.init({
+            // Global settings:
+            delay: 0, // values from 0 to 3000, with step 50ms
+
+        });
+    </script>
+
+    <script>
+        let x = document.cookie
+        // console.log(x);
+        if (x == '') {
+            $('#username').text("User")
+        }
+        else {
+            let ca = document.cookie.split(';');
+            let no = ca.length
+            for (let i = 0; i < no; i++) {
+                // console.log(ca[i].substr(0, ca[i].indexOf("=")));
+                if (ca[i].substr(0, ca[i].indexOf("=")) == " name") {
+                    let name = ca[i].substr(ca[i].indexOf("=") + 1)
+                    $('#username').text(name)
+                }
+            }
+        }
+    </script>
+
+    <!-- CHANGE GALLERY LOCATION AND NAV LINK-->
+    <script>
+        let text = window.location.pathname
+        // console.log(text);
+        if (text != "/") {
+            $('.gal').attr("href", "/")
+            $('.con').attr("href", "/")
+        }
+        if (text == "/") {
+            $('.ss .nav-item .nav-link').removeClass('active')
+            $('.hom').addClass('active')
+        }
+        else if (text == "/specimensol") {
+            $('.ss .nav-item .nav-link').removeClass('active')
+            $('.spec').addClass('active')
+        }
+        else {
+            $('.ss .nav-item .nav-link').removeClass('active')
+            $('.studymat').addClass('active')
+        }
+
+        document.querySelectorAll('.ss .nav-item .nav-link').forEach(item => {
+            item.addEventListener('click', event => {
+                $('.ss .nav-item .nav-link').removeClass('active')
+                item.classList.add('active')
+            })
+        })
+    </script>
+
+
+
+    <!-- CONTACT FORM JS -->
+    <script>
+        document.querySelector(".consub").addEventListener("click", submitContactForm)
+        function alertconmsge(str) {
+            $('#validationcon').text(str);
+            $('#validationcon').removeClass('d-none')
+        }
+        document.querySelector('.conclose1').addEventListener("click", () => {
+            contactreset()
+            $('#validationcon').addClass('d-none')
+            $('#exampleModal').modal('hide');
+        })
+        function contactreset() {
+            $('#floatingName').val("")
+            $('#floatingPhoneNumber').val("")
+            $('#floatingEmail').val("")
+        }
+        function submitContactForm() {
+            // let check = false;
+            let gmailcheck = false
+            let name = $('#floatingName').val()
+            let phone = $('#floatingPhoneNumber').val()
+            let email = $('#floatingEmail').val()
+            // let phoneno = /^\d{10}$/;
+            let gmailpattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            // to check the phone and email
+            // if (phone.match(phoneno)) {
+            //     check = true;
+            // }
+            if (gmailpattern.test(email)) {
+                gmailcheck = true;
+            }
+            if (name == "" && phone == "" && email == "") {
+                alertconmsge("Please fill form correctly")
+            }
+            else if (name == "") {
+                alertconmsge("Please fill the name")
+            }
+            else if (phone == "") {
+                alertconmsge("Please fill the Phonenumber")
+            }
+            else if (email == "") {
+                alertconmsge("Please fill the email")
+            }
+
+            else if (phone.length != 10) {
+                alertconmsge("Please Enter 10digit Number")
+            }
+            else if (gmailcheck == false) {
+                alertconmsge("Please Enter Correct Email")
+            }
+            else {
+                contactreset()
+                $('#validationreg').addClass('d-none')
+                // console.log(name + phone + email + classSelected + board);
+                let body = "Name: " + name + "<br>Email: " + email;
+                // console.log(body);
+                sendContactEmail(name, email)
+            }
+        }
+        function sendContactEmail(name, email) {
+            let body = "Name: " + name + "<br>Email: " + email;
+            $('#loadModal').modal('show')
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "duttisingh2503@gmail.com",
+                Password: "ceyessbevhapdnvk",
+                To: "aradhana1707@gmail.com",
+                From: "duttisingh2503@gmail.com",
+                Subject: "Message From IQ ClASSES" + name,
+                Body: body
+            }).then((message) => {
+                setTimeout(() => {
+                    alert('Message Sent SuccessFully')
+                }, 200);
+
+                $('#loadModal').modal('hide')
+                // console.log(message);
+            }
+            );
+            $('.modal').modal('hide');
+            $('body').removeClass('modal-open');
+            $('.modal-backdrop').remove();
+            // $('.modal-backdrop').addClass('fade')
+        }
+
+
+    </script>
+
+
+    <!-- SIDEBAR BUTTON JS -->
+    <script>
+        let btnScrollToTop = document.querySelector('#btnScrollToTop')
+
+        window.onscroll = function () { scrollfunction() }
+
+
+        function scrollfunction() {
+            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                btnScrollToTop.style.display = "block";
+            } else {
+                btnScrollToTop.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+
+        function topFunction() {
+            $("html,body").animate({ scrollTop: 0 }, "fast")
+            // document.body.scrollTop = 0; // For Safari
+            // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+
+    </script>
+
+
+    <script>
+
+        // Register FORM JS 
+        let val;
+        let verify = false;
+        function res() {
+            val = ""
+            $('#regval').css("color", "#842029")
+            $('#regval').css("background-color", "##f8d7da")
+            $('#regval').addClass('d-none')
+            $('#floatName').val("")
+            $('#floatNumber').val("")
+            $('#floatOTP').val("")
+        }
+        function alermsg(str) {
+            if (str == "Verified Successfully") {
+                $('#regval').css("color", "black")
+                $('#regval').css("background-color", "#0080006e")
+            }
+            else {
+                $('#regval').css("color", "#842029")
+                $('#regval').css("background-color", "#f8d7da")
+            }
+            $('#regval').text(str);
+            $('#regval').removeClass('d-none')
+        }
+        $('.log').click(() => {
+            $('.reg').removeClass('active')
+            $('.log').addClass('active')
+        }
+        )
+        $('.reg').click(() => {
+            $('.log').removeClass('active')
+            $('.reg').addClass('active')
+        }
+        )
+        document.querySelector('.regclose').addEventListener("click", () => {
+            // contactreset()
+            // $('#validationcon').addClass('d-none')
+            res()
+            $('#exampleModal1').modal('hide');
+
+        })
+        $('#otpbtn').click(() => {
+            if (($('#floatNumber').val()) == "") {
+                alermsg("please enter the Number")
+            }
+            else if (($('#floatNumber').val()).length != 10) {
+                alermsg("Please Enter the ten digit number")
+            }
+            else {
+                $('#regval').addClass('d-none')
+                $('#floatOTP').prop('disabled', false)
+                $('#floatOTP').css('cursor', 'auto')
+                val = Math.floor(1000 + Math.random() * 9000);
+                console.log(val);
+            }
+        })
+        $('#verifybtn').click(() => {
+            console.log(val);
+            let otp = $('#floatOTP').val()
+            if (otp == "") {
+                alermsg("Please enter the otp")
+            }
+            else {
+                if (val == otp) {
+                    verify = true;
+                    alermsg("Verified Successfully")
+                }
+                else {
+                    verify = false;
+                    alermsg("Wrong OTP!")
+                }
+            }
+
+        })
+        $('.sub').click(() => {
+            let rename = $('#floatName').val()
+            let renumber = $('#floatNumber').val()
+            let otp = $('#floatOTP').val()
+            if (rename == "" && renumber == "" && otp == "") {
+                alermsg("Please fill the form Properly")
+            }
+            else if (rename == "") {
+                alermsg("Please enter the Name")
+            }
+            else if (renumber == "") {
+                alermsg("please enter the Number")
+            }
+            else if (renumber.length != 10) {
+                alermsg("Please Enter the ten digit number")
+            }
+            else if (otp == "") {
+                alermsg("Please enter the otp")
+            }
+            else if (verify == false) {
+                alermsg("Please verify your number")
+            }
+            else {
+                $('#regval').addClass('d-none')
+                console.log(rename + renumber);
+                $.ajax({
+                    url: "/reg",
+                    type: "POST",
+                    data: {
+                        num1: rename,
+                        num2: renumber
+                    },
+                    success: function (r) {
+                        console.log(r);
+                        res()
+                        if (r != "registered") {
+                            $('#exampleModal1').modal('hide');
+                            setTimeout(() => {
+                                alert('user registered')
+                            }, 300);
+                            $('#username').text(r)
+                        }
+                        else {
+                            alermsg("Number is already registered")
+                        }
+                    }
+                })
+
+            }
+        })
+
+    </script>
+    <script>
+        // login form js
+
+        let exist = false;
+
+        function alerloginmsg(str) {
+            $('#loginaler').text(str);
+            $('#loginaler').removeClass('d-none')
+        }
+        $('#loginsub').click(() => {
+            let phone = $('#floatingNumberlogin').val()
+            if (phone == "") {
+                alerloginmsg("Please enter the phone number")
+            }
+            else {
+                $.ajax({
+                    url: '/login',
+                    method: "POST",
+                    data: {
+                        uphone: phone
+                    },
+                    success: (r) => {
+                        if (r != "notuser") {
+                            let data = eval(r)
+                            let name = data.name
+                            console.log(name);
+                            $('#username').text('')
+                            $('#username').text(name)
+                            setTimeout(() => {
+                                alert("welcome " + name)
+                            }, 300);
+                            $('#loginaler').addClass('d-none')
+                            $('#exampleModal1').modal('hide');
+                        }
+                        else {
+                            alerloginmsg("This number does not exist")
+                        }
+                    }
+                })
+
+
+            }
+        })
+    </script>
+    <!-- <script>
+        let links = $('.ss .nav-item .nav-link')
+        // console.log(links);
+        document.querySelectorAll('.ss .nav-item .nav-link').forEach(item => {
+            item.addEventListener('click', event => {
+                $('.ss .nav-item .nav-link').removeClass('active')
+                item.classList.add('active')
+            })
+        })
+
+    </script> -->
+</body>
+
+</html>

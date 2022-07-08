@@ -1,0 +1,720 @@
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Open+Sans:wght@300;400&family=Ubuntu&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Nova+Mono&family=Nunito:wght@500&family=Open+Sans:wght@300;400;500&family=Ubuntu&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Fira+Mono&family=Nova+Mono&family=Nunito:wght@500&family=Open+Sans:wght@300;400;500&family=Ubuntu&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Fira+Mono&family=Nova+Mono&family=Nunito:wght@500&family=Open+Sans:wght@300;400;500&family=Poppins&family=Ubuntu&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Fira+Mono&family=Nova+Mono&family=Nunito:wght@500&family=Open+Sans:wght@300;400;500&family=Poppins:wght@200;300;400&family=Ubuntu&display=swap');
+    h3 {
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .att {
+        background-color: #ffb6c190;
+        width: 15%;
+        border-radius: 5px;
+        margin: auto
+    }
+
+    /* Dropdown class */
+    .effect3 {
+        background-color: transparent !important;
+        color: red !important;
+        border-radius: 20px !important;
+        box-shadow: 0px 5px red !important;
+        font-family: "Nunito", sans-serif;
+        border: 2px solid red !important;
+    }
+
+    .choose {
+        margin-left: 43.5em !important;
+        margin-top: 1em !important;
+    }
+
+
+    .sol2 {
+        font-family: "Nunito", sans-serif;
+        text-shadow: 1px 1px red;
+    }
+
+    h1 {
+        font-family: "Alumni Sans Inline One", cursive;
+        font-size: 4.5em;
+
+        color: red;
+    }
+
+    .mainimg:hover {
+        filter: drop-shadow(5px 5px 5px #9f9f9f);
+    }
+
+    .sol {
+        font-size: 2.6em;
+        display: flex;
+        color: red;
+        border: 2px solid;
+        border-radius: 24px;
+        box-shadow: 10px 10px #fe5353;
+        width: 26em !important;
+        font-family: "Nunito", sans-serif;
+        text-shadow: 1px 1px red;
+        margin-left: 3em;
+        font-family: "Nunito", sans-serif;
+        text-shadow: 1px 1px red;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .integerate {
+        font-size: 55px;
+    }
+
+
+
+    @media only screen and (max-width: 760px) {
+        .head-commt {
+            margin: 0 !important;
+        }
+        .rate{
+            margin-left: 2px;
+    font-weight: 500;
+    margin-right: -3em;
+
+        }
+        .comment  .rating{
+            margin-left: -23px !important;
+        }
+        .comment .comment-box h4 {
+            font-size: 0.9em !important;
+            font-family: 'Poppins', sans-serif !important;
+        }
+        .comment .send {
+            margin-right:-3em;
+            width: 5em;
+    border-radius: 8px;
+              }
+        
+       .comment-area textarea{
+        height: 103px;
+    width: 285px;
+    margin-top: 0.1em;
+    margin-left: -1em;
+       }
+
+        .cmmnt {
+            width: 82% !important;
+        }
+
+        .cmmnt-detail {
+            margin: auto;
+            width: 73% !important;
+        }
+        .star{
+            margin-top:-1.5em;
+            
+        }
+
+        .commentaler {
+            width: 82% !important;
+        }
+
+        .comment .card {
+            width: 377px !important;
+            height:286px !important;
+        }
+
+        .pull-right {
+            margin-left: -1em !important;
+        }
+
+        .comment .col-2 img {
+            width: 122px;
+            margin-top:-1em;
+        }
+
+       
+
+        .res {
+            margin-left: 4.5em !important;
+        }
+
+        .large {
+            margin-left: 1.5em !important;
+        }
+
+        .att {
+            width: 40%;
+        }
+
+        .choose {
+            margin-left: 8em !important;
+            margin-top: 1em !important;
+        }
+
+        .sol {
+            font-size: 2em;
+            color: red;
+            border: 2px solid;
+            border-radius: 24px;
+            box-shadow: 10px 10px #fe5353;
+            width: 11em;
+            margin-left: 0.5em;
+            font-family: "Nunito", sans-serif;
+            text-shadow: 1px 1px red;
+        }
+
+
+    }
+
+    .commentaler {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 1em;
+        color: black;
+        font-weight: 500;
+    }
+
+    .select {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .select h3 {
+        margin-bottom: 0;
+        font-weight: 600;
+        margin-right: 16px;
+    }
+
+    .frac {
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        letter-spacing: 0.001em;
+        text-align: center;
+    }
+
+    .frac>span {
+        display: block;
+        padding: 0.1em;
+    }
+
+    .frac span.bottom {
+        border-top: thin solid black;
+    }
+
+    .frac span.symbol {
+        display: none;
+    }
+
+    .comment .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        padding: 20px;
+        width: 545px;
+        height:347px;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1)
+    }
+
+    .comment .comment-box {
+        padding: 5px
+    }
+   
+
+    .comment .comment-area textarea {
+        resize: none;
+        border: 1px solid #ad9f9f
+    }
+
+    .comment .form-control:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #ffffff;
+        outline: 0;
+        box-shadow: 0 0 0 1px rgb(255, 0, 0) !important
+    }
+    .rate{
+        margin-top: 0.7em;
+    margin-left: 11px;
+    font-weight: 500;
+    font-size: 0.8em;
+    }
+
+    .comment .send {
+        color: #fff;
+        background-color: #ff0000;
+        border-color: #ff0000;
+        /* width : 6em;
+    border-radius: 10px;
+   
+    margin-right: -1.8em; */
+    width: 6em;
+    border-radius:10px;
+    margin-right:-1.8em;
+
+    }
+
+    .comment .send:hover {
+        color: #fff;
+        background-color: #f50202;
+        border-color: #f50202
+    }
+
+    .comment .rating {
+        display: flex;
+        margin-top: -10px;
+        flex-direction: row-reverse;
+        margin-left: -4px;
+        float: left
+    }
+
+    .comment .rating>input {
+        display: none
+    }
+
+    .comment .rating>label {
+        position: relative;
+        width: 19px;
+        font-size: 25px;
+        color: #ff0000;
+        cursor: pointer
+    }
+
+    .comment .rating>label::before {
+        content: "\2605";
+        position: absolute;
+        opacity: 0
+    }
+
+    .comment .rating>label:hover:before,
+    .comment .rating>label:hover~label:before {
+        opacity: 1 !important
+    }
+
+    .comment .rating>input:checked~label:before {
+        opacity: 1
+    }
+
+    .comment .rating:hover>input:checked~label:before {
+        opacity: 0.4
+    }
+
+    .comment .comment-box h4 {
+        font-size: 1.5em;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 12px;
+    }
+
+    .comment-area {
+        width: 79%;
+    }
+
+    .cmmnt {
+        box-shadow: 8px 3px 0 0 rgba(253, 94, 94, 0.707);
+        border-radius: 9px;
+        background: #fccece5c;
+        width: 27%;
+        text-align: justify;
+        margin: auto;
+        padding: 1.2em 1.4em;
+        font-size:0.6em;
+        font-family:'Poppins',sans-serif;
+    }
+
+    .allcmmnts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cmmnt-detail {
+        margin: auto;
+        width: 30%;
+    }
+
+    .cmmnt-detail span {
+        font-weight: bold;
+        font-size: 17px;
+        float: right;
+        font-family: "Nunito", sans-serif;
+    }
+    .date{
+margin-left:1em;
+    }
+    .name{
+        margin-left:1em;
+    }
+    .dash{
+        margin-left:1em;
+    }
+</style>
+<h2 class="text-center mb-5 mt-5 sol">Class XII Integration ML AGARWAL</h2>
+
+
+<div class="container">
+    <p style="color:rgb(10, 10, 10);font-weight:500; line-height:31px;">
+        <b>ML Aggarwal</b>, is undoubtedly, one of the best reference books for the students studying in ICSE schools.It
+        is the most text book for ICSE / ISC Student since decade. No doubt that only ML Aggarwal Maths is enough for
+        preparation of next council exam.
+        The concepts are explained in a simple and easy to understand manner, supporting the students to grasp the
+        essence of different concepts with ease. Preparing with this book will build skills and techniques to solve the
+        problems with speed and correctness.
+    </p>
+</div>
+<!-- <h2 class="text-center sol2 mt-5 att" style="color: red">Class X</h2> -->
+<!-- DROPDOWN -->
+<div class="select">
+    <h3 style="font-weight: 600;">Select Exercise</h3>
+    <div class="dropdown ">
+        <a class=" effect3 btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Exercise 8.1 &nbsp;<i class="fas fa-caret-down"></i>
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Exercise 8.2</a></li>
+            <li><a class="dropdown-item" href="#">Exercise 8.3</a></li>
+            <li><a class="dropdown-item" href="#">Exercise 8.4</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="exercices bg-light">
+
+
+    <h1 class="text-center text-danger">CLASS 12 Integration QUESTIONS </h1>
+    <div class="container mt-5">
+
+
+
+
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h4 class="text-danger"><span class="fw-bold"> Q6(i)</span>
+                    <span class="integerate">&#8747;</span>
+                    <div class="frac">
+                        <span>
+                            tanx.sec<sup>2</sup>x
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">1-tan<sup>2</sup>x</span>
+                    </div>
+                    dx
+                    <!-- tanx.sec<sup>2</sup>x/<sub>1-tan<sup>2</sup>x</sub> dx -->
+                </h4>
+
+
+                <h4><span class="text-success">Solution </span></h4>
+                <img class="img-fluid" src="class12Integration1/img16(i).jpg" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h4 class="text-danger"><span class="fw-bold"> Q6(ii)</span>
+                    <span class="integerate">&#8747;</span>
+                    <div class="frac">
+                        <span>
+                            x<sup>5</sup>
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">1+x <sup>6</sup> </span>
+                    </div>
+                    dx
+                    <!-- tanx.sec<sup>2</sup>x/<sub>1-tan<sup>2</sup>x</sub> dx -->
+                </h4>
+
+
+                <h4><span class="text-success">Solution </span></h4>
+                <img class="img-fluid" src="class12Integration1/img16(ii).jpg" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h4 class="text-danger"><span class="fw-bold"> Q17(i)</span>
+                    <span class="integerate">&#8747;</span>
+                    <div class="frac">
+                        <span>
+                            2cosx-3sinx
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">6cosx+4sinx</span>
+                    </div>
+                    dx
+                    <!-- tanx.sec<sup>2</sup>x/<sub>1-tan<sup>2</sup>x</sub> dx -->
+                </h4>
+
+
+                <h4><span class="text-success">Solution </span></h4>
+                <img class="img-fluid" src="class12Integration1/img17(i).jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h4 class="text-danger"><span class="fw-bold"> Q17(ii)</span>
+                    <span class="integerate">&#8747;</span>
+                    <div class="frac">
+                        <span>
+                            sin2x-sinx
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">sin <sup>2</sup>x+cosx+7</span>
+                    </div>
+                    dx
+                    <!-- tanx.sec<sup>2</sup>x/<sub>1-tan<sup>2</sup>x</sub> dx -->
+                </h4>
+
+
+                <h4><span class="text-success">Solution </span></h4>
+                <img class="img-fluid" src="class12Integration1/img17(ii).jpg" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h4 class="text-danger"><span class="fw-bold"> Q18(i)</span>
+                    <span class="integerate">&#8747;</span>
+                    <div class="frac">
+                        <span>
+                            x+tanx
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">x <sup>2</sup>-2logcosx</span>
+                    </div>
+                    dx
+                    <!-- tanx.sec<sup>2</sup>x/<sub>1-tan<sup>2</sup>x</sub> dx -->
+                </h4>
+
+
+                <h4><span class="text-success">Solution </span></h4>
+                <img class="img-fluid" src="class12Integration1/img18(i).jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h4 class="text-danger"><span class="fw-bold"> Q18(ii)</span>
+                    <span class="integerate">&#8747;</span>
+                    <div class="frac">
+                        <span>
+                            1
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">xlogx</span>
+                    </div>
+                    dx
+                    <!-- tanx.sec<sup>2</sup>x/<sub>1-tan<sup>2</sup>x</sub> dx -->
+                </h4>
+
+
+                <h4><span class="text-success">Solution </span></h4>
+                <img class="img-fluid" src="class12Integration1/img18(ii).jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h4 class="text-danger"><span class="fw-bold"> Q19(i)</span>
+                    <span class="integerate">&#8747;</span>
+                    <div class="frac">
+                        <span>
+                            2x<sup>2</sup>-1
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">x(x<sup>2</sup>-logx )</span>
+                    </div>
+                    dx
+                    <!-- tanx.sec<sup>2</sup>x/<sub>1-tan<sup>2</sup>x</sub> dx -->
+                </h4>
+
+
+                <h4><span class="text-success">Solution </span></h4>
+                <img class="img-fluid" src="class12Integration1/img19(i).jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h4 class="text-danger"><span class="fw-bold"> Q19(ii)</span>
+                    <span class="integerate">&#8747;</span>
+                    <div class="frac">
+                        <span>
+                            e<sup>2x</sup>+1
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">e<sup>2x</sup>-1</span>
+                    </div>
+                    dx
+                    <!-- tanx.sec<sup>2</sup>x/<sub>1-tan<sup>2</sup>x</sub> dx -->
+                </h4>
+
+
+                <h4><span class="text-success">Solution </span></h4>
+                <img class="img-fluid" src="class12Integration1/img19(ii).jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h4 class="text-danger"><span class="fw-bold"> Q20(i)</span>
+                    <span class="integerate">&#8747;</span>
+                    <div class="frac">
+                        <span>
+                            1
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">1+e<sup>-x</sup></span>
+                    </div>
+                    dx
+                    <!-- tanx.sec<sup>2</sup>x/<sub>1-tan<sup>2</sup>x</sub> dx -->
+                </h4>
+
+
+                <h4><span class="text-success">Solution </span></h4>
+                <img class="img-fluid" src="class12Integration1/img20(i).jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h4 class="text-danger"><span class="fw-bold"> Q20(ii)</span>
+                    <span class="integerate">&#8747;</span>
+                    <div class="frac">
+                        <span>
+                            tanx
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">a+btan<sup>2</sup>x</span>
+                    </div>
+                    dx
+                    <!-- tanx.sec<sup>2</sup>x/<sub>1-tan<sup>2</sup>x</sub> dx -->
+                </h4>
+
+
+                <h4><span class="text-success">Solution </span></h4>
+                <img class="img-fluid" src="class12Integration1/img20(ii).jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h4 class="text-danger"><span class="fw-bold"> Q21(i)</span>
+                    <span class="integerate">&#8747;</span>
+                    <div class="frac">
+                        <span>
+                            1-cotx
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">1+cotx</span>
+                    </div>
+                    dx
+                    <!-- tanx.sec<sup>2</sup>x/<sub>1-tan<sup>2</sup>x</sub> dx -->
+                </h4>
+
+
+                <h4><span class="text-success">Solution </span></h4>
+                <img class="img-fluid" src="class12Integration1/img21(i).jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <h4 class="text-danger"><span class="fw-bold"> Q21(ii)</span>
+                    <span class="integerate">&#8747;</span>
+                    <div class="frac">
+                        <span>
+                            1-cotx
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">1+cotx</span>
+                    </div>
+                    dx
+                    <!-- tanx.sec<sup>2</sup>x/<sub>1-tan<sup>2</sup>x</sub> dx -->
+                </h4>
+
+
+                <h4><span class="text-success">Solution </span></h4>
+                <img class="img-fluid" src="class12Integration1/img21(ii).jpg" alt="">
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="comment mt-5 mb-5">
+    <div class="card" style="margin: auto;">
+        <div class="row mx-5 head-commt" style="display: flex;align-items: center;justify-content: space-between;">
+            <div class="col-2"> <img src="img/LOGO.png" width="130">
+            </div>
+
+            <div class="col-lg-8 col-7" style="margin-left: 4em;">
+                <div class="comment-box ml-2">
+
+                    <h4>Add a comment</h4>
+                    <div class="rating">
+                        <span class="rate" style="margin-top: 0.6em;margin-left: 6px;font-weight: 500;font-family:'Poppins',sans-serif;">(Please
+                            Give Stars also)</span> <input type="radio" name="rating" value="7" id="7"> <label
+                            for="7">☆</label><input type="radio" name="rating" value="6" id="6"> <label
+                            for="6">☆</label> <input type="radio" name="rating" value="5" id="5"><label
+                            for="5">☆</label>
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio"
+                            name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating"
+                            value="2" id="2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment-area mt-4" style="margin: auto;"> <textarea class="form-control"
+                placeholder="what is your view?" rows="5" cols="30" id="message"></textarea> </div>
+        <div class="comment-btns mt-2" style="display:flex;justify-content:flex-end;margin-right: 5em;">
+
+            <button class="btn btn-success send">Post <i class="fa fa-long-arrow-right ml-1"></i></button>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+    </div>
+</div>
+<div class="commentaler alert alert-danger d-none" role="alert" style="display: flex;justify-content: space-between;">
+    <span class="alermssge"></span>
+    <!-- Your Post Will Be Live Soon! -->
+    <img src="img/xmark-solid.svg" alt="" style="width: 16px;cursor: pointer;" class="cross">
+</div>
+<div class="allcmmnts">
+    <div class="cmmnt">
+        <h4 style="font-family:'Poppins',sans-serif; font-weight:200;font-size:2em"> "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure similique accusamus recusandae lorem."</h4>
+
+    </div>
+    <div class="cmmnt-detail mt-3 mb-3">
+        <span class="me-4 date">12/12/12</span>
+        <span class="name ms-4">-Abhay</span>
+        <!-- <span class="dash ms-1">-</span> -->
+        <span class="star" style="float: left;margin-left: 54px;color: #e31837;"><i class="fas fa-solid fa-star"></i><i
+                class="fas fa-solid fa-star"></i><i class="fas fa-solid fa-star"></i></span>
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script>
+    function cmntmsg(str) {
+        $('.commentaler').removeClass('d-none')
+        // $('.commentaler').append(`<span>${str}</span>`)
+        $('.alermssge').text(str)
+    }
+    $('.cross').click(() => {
+        $('.commentaler').addClass('d-none')
+    })
+    $('.send').click(() => {
+        // $('.commentaler span').remove()
+        if (($('#message').val()).length == 0) {
+            cmntmsg("Please enter more than 10words")
+        }
+        else if (($('#message').val().match(/(\w+)/g).length) < 10)
+            cmntmsg("Please enter more than 10words")
+        else {
+            cmntmsg("Your Post Will Be Live Soon")
+        }
+    })
+</script>

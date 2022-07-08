@@ -1,0 +1,141 @@
+<%- include('../partials/additionalcss.ejs') %>
+
+    <%- include('../partials/secondnav.ejs') %>
+        <div class="container">
+            <div>
+                <h1 style="color:red;">ICSE Class 9th Chemistry</h1>
+                <p style="font-size:medium;">
+                    <b>Chemistry is the science applicable in our day-to-day life. Many of the changes we observe in the
+                        world around us are caused by chemical reactions.
+                        Chemistry starts emerging as one of the Science disciplines at this level. In grade-9, students
+                        are introduced to phenomena.
+                        IQ Classes content aims to help students in this exploration and also make sure
+                        that students to excel in the subject.
+                    </b>
+                </p>
+                <p><b> ICSE Class 9 Chemistry syllabus includes concepts on atomic structure and chemical bonding, the
+                        periodic tables, gas laws, study of the element Hydrogen, and many more.
+
+                    </b></p>
+
+            </div>
+            <div class="info d-none">
+                <span>class9ICSE/class9chemistryimg</span>
+                <div>
+                    <h1>Matter and its composition</h1>
+                </div>
+                <div>
+                    <h1>Study of Gas laws</h1>
+                </div>
+                <div>
+                    <h1>Elements,compounds and mixtures</h1>
+                </div>
+                <div>
+                    <h1>Language of Chemistry</h1>
+                </div>
+                <div>
+                    <h1>Physical & Chemical changes</h1>
+                </div>
+                <div>
+                    <h1>Water</h1>
+                </div>
+                <div>
+                    <h1>Atomic structure</h1>
+                </div>
+                <div>
+                    <h1>Periodic Table</h1>
+                </div>
+                <div>
+                    <h1>Hydrogen</h1>
+                </div>
+                <div>
+                    <h1>Atmospheric pollution</h1>
+                </div>
+                <div>
+                    <h1>Practical Chemistry</h1>
+                </div>
+
+            </div>
+            <!-- chemistry SUBJECTS -->
+            <div class="container contain bg-light learnblock" style="margin-top: 2em;">
+                <div class="row row-cols-1 row-cols-md-3 g-3 mb-3 m-auto allcard">
+
+                </div>
+            </div>
+            <div>
+                <h5 style="color:red;">What are the chapters included in class 9 Chemistry ICSE?</h5>
+                <p><b>All chapters of class 9 Chemistry , in the prescribed syllabus by the ICSE
+                        <a style="text-decoration: none;"
+                            href="https://cisce.org/UploadedFiles/PDF/2021ICSEReducedSylabiIX-CHEMISTRY.pdf">Click here
+                        </a> to get more detailed description of your syllabus.
+
+                        Every chapter have their importance and weightage.
+                        Each chapter has various concepts based on NCERT pattern and plays a specific role in improving
+                        outcomes.
+                        ICSE Class 9th chemistry chapter list will give you an idea of the entire course coverage. </b>
+                </p>
+                <h5 style="color:red;">How to start for class 9 Chemistry ICSE?</h5>
+                <p><b> For Class 9 Chemistry ICSE, one should clearly understand the syllabus and course structure
+                        first. Teachers will help you in giving
+                        brief introduction about your syllabus and Question paper pattern
+                        and will help you to improve your learning levels . <a style="text-decoration: none;"
+                            href="https://cisce.org/Class_IX_Specimen_Question_Papers_2019.aspx">Click here for specimen
+                            question papers</a>. </b></p>
+                <p><b>Slowly understands the concepts and initiate a habit of practice. Practicing and revising all
+                        these topics from initial will help you to understand the concepts with clarity.
+                        Always try to clear the concepts of Class 9 Chemistry ICSE that you do not understand.
+                        Avoid skipping topics or concepts. Revise crucial topics daily.
+
+                    </b></p>
+                <h5 style="color:red;">How can you score good marks in the Chemistry class 9 ICSE?</h5>
+                <p><b>
+                        Chemistry lessons were filled with the knowledge of new chemicals, compounds, experiments and
+                        inferences. You can expect short questions from electrolysis and several numerical questions
+                        also. In case of organic chemistry, be very clear of the concepts explained in the chapters.
+                    </b></p>
+                <p>
+                    <li><b>Practice balancing equations. They are a one stop requirement if you want to score in short
+                            type answers.</b></li>
+                    <li><b>Practice numerical problems till you get most of them perfectly.</b></li>
+                    <li><b> Take up important notes like definitions of laws and theories and write them in a notebook
+                            so that can use them as flashcards later while revising.</b></li>
+                </p>
+                <h5 style="color:red;">ICSE Class 9 prescribed Chemistry Books</h5>
+                <p><b>Here is a list of the ICSE books for Class 9 which students can refer while preparing for their
+                        Chemistry exam which is updated according to the latest ICSE syllabus.
+                        Students of Class 9 should start their preparation by studying from the textbook of ICSE Class 9
+                        Chemistry as it covers the entire syllabus and gives the ample number of questions to practice.
+                    </b></p>
+                <p>
+                    <li><b>ICSE Concise Chemistry Part I Class IX</b></li>
+                    <li><b>Together with Chemistry for Class 9</b></li>
+                    <li><b>Simplified ICSE Chemistry for Class IX</b></li>
+                </p>
+
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            function fli(e) {
+                let click = false;
+                let card = e.children[0];
+                let image = e.children[0].children[0].children[1]
+                let buttons = e.children[0].children[1].children[1].children[0]
+                // $(buttons.children[0]).click(() => {
+                //     console.log('click');
+                // })
+                // if (click == false) {
+                //     console.log(click);
+                //     $(card).toggleClass('rotate')
+                //     setTimeout(() => {
+                //         $(image).toggleClass('d-none')
+                //     }, 200);
+                // }
+                $(card).toggleClass('rotate')
+                setTimeout(() => {
+                    $(image).toggleClass('d-none')
+                }, 200);
+            }
+        </script>
+        <%- include('../partials/makecard.ejs') %>

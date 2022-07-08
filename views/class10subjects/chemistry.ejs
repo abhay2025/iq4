@@ -1,0 +1,145 @@
+<%- include('../partials/additionalcss.ejs') %>
+    <%- include('../partials/secondnav.ejs') %>
+        <div class="container">
+            <div>
+                <h1 style="color:red;">ICSE Class 10th Chemistry</h1>
+                <p style="font-size:medium;">
+                    <b>Chemistry is the science applicable in our day-to-day life. Many of the changes we observe in the
+                        world around us are caused by chemical reactions.
+                        Chemistry starts emerging as one of the Science disciplines at this level. In grade-10, students
+                        are introduced to phenomena.
+                        IQ Classes content aims to help students in this exploration and also make sure
+                        that students to excel in the subject.
+                    </b>
+                </p>
+                <p><b> ICSE Class 10 Chemistry syllabus includes concepts on atomic structure and chemical bonding, the
+                        periodic tables, gas laws, study of the element Hydrogen, and many more.
+
+                    </b></p>
+
+            </div>
+
+            <div class="info d-none">
+                <span>class10ICSE/class10chemistryimg</span>
+                <div>
+                    <h1>Periodic Table</h1>
+                </div>
+                <div>
+                    <h1>Chemical Bonding</h1>
+                </div>
+                <div>
+                    <h1>Acids,Bases and Salts</h1>
+                </div>
+                <div>
+                    <h1>Analytical Chemistry</h1>
+                </div>
+                <div>
+                    <h1>Gay Lussac's Law</h1>
+                </div>
+                <div>
+                    <h1>Percentage Composition</h1>
+                </div>
+                <div>
+                    <h1>Electrolysis</h1>
+                </div>
+                <div>
+                    <h1>Metallurgy</h1>
+                </div>
+                <div>
+                    <h1>Hydrogen Chloride</h1>
+                </div>
+                <div>
+                    <h1>Ammonia</h1>
+                </div>
+                <div>
+                    <h1>Sulphuric Acid</h1>
+                </div>
+                <div>
+                    <h1>Organic Chemistry</h1>
+                </div>
+                <div>
+                    <h1>Practical Chemistry</h1>
+                </div>
+            </div>
+            <!-- CHEMISTRY SUBJECTS -->
+            <div class="container contain bg-light learnblock" style="margin-top: 2em;">
+                <div class="row row-cols-1 row-cols-md-3 g-3 mb-3 m-auto allcard">
+
+                </div>
+            </div>
+
+            <div>
+                <h5 style="color:red;">What are the chapters included in class 10 Chemistry ICSE?</h5>
+                <p><b>All chapters of class 10 Chemistry , in the prescribed syllabus by the ICSE
+                        <a style="text-decoration: none;"
+                            href="https://www.cisce.org/publicationdetail.aspx?id=92">Click here </a> to get more
+                        detailed description of your syllabus.
+
+                        Every chapter have their importance and weightage.
+                        Each chapter has various concepts based on NCERT pattern and plays a specific role in improving
+                        outcomes.
+                        ICSE Class 10th chemistry chapter list will give you an idea of the entire course coverage. </b>
+                </p>
+                <h5 style="color:red;">How to start for class 10 Chemistry ICSE?</h5>
+                <p><b> For Class 10 Chemistry ICSE, one should clearly understand the syllabus and course structure
+                        first. Teachers will help you in giving
+                        brief introduction about your syllabus and Question paper pattern
+                        and will help you to improve your learning levels . <a style="text-decoration: none;"
+                            href="https://www.cisce.org/icse_X_Specimen_Question_Papers.aspx">Click here for specimen
+                            question papers</a>. </b></p>
+                <p><b>Slowly understands the concepts and initiate a habit of practice. Practicing and revising all
+                        these topics from initial will help you to understand the concepts with clarity.
+                        Always try to clear the concepts of Class 10 Chemistry ICSE that you do not understand.
+                        Avoid skipping topics or concepts. Revise crucial topics daily.
+
+                    </b></p>
+                <h5 style="color:red;">How can you score good marks in the Chemistry class 10 ICSE?</h5>
+                <p><b>
+                        Chemistry lessons were filled with the knowledge of new chemicals, compounds, experiments and
+                        inferences. You can expect short questions from electrolysis and several numerical questions
+                        also. In case of organic chemistry, be very clear of the concepts explained in the chapters.
+                    </b></p>
+                <p>
+                    <li><b>Practice balancing equations. They are a one stop requirement if you want to score in short
+                            type answers.</b></li>
+                    <li><b>Practice numerical problems till you get most of them perfectly.</b></li>
+                    <li><b> Take up important notes like definitions of laws and theories and write them in a notebook
+                            so that can use them as flashcards later while revising.</b></li>
+                </p>
+                <h5 style="color:red;">ICSE Class 10 prescribed Chemistry Books</h5>
+                <p><b>Here is a list of the ICSE books for Class 10 which students can refer while preparing for their
+                        Chemistry exam which is updated according to the latest ICSE syllabus.
+                        Students of Class 10 should start their preparation by studying from the textbook of ICSE Class
+                        10 Chemistry as it covers the entire syllabus and gives the ample number of questions to
+                        practice.
+                    </b></p>
+                <p>
+                    <li><b>ICSE Concise Chemistry Part II Class X</b></li>
+                    <li><b>Together with Chemistry for Class 10</b></li>
+                    <li><b>Simplified ICSE Chemistry for Class X</b></li>
+                </p>
+
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            function fli(e) {
+
+                let allcard = $('.thecard');
+
+                let click = false;
+                let card = e.children[0];
+                let image = e.children[0].children[0].children[1]
+                let buttons = e.children[0].children[1].children[1].children[0]
+
+
+                $(card).toggleClass('rotate')
+                setTimeout(() => {
+                    $(image).toggleClass('d-none')
+                }, 200);
+            }
+        </script>
+
+        <%- include('../partials/makecard.ejs') %>

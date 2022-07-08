@@ -1,0 +1,223 @@
+<style>
+    /* ---------subject chapters------- */
+    @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Overpass:wght@300&family=Ubuntu:wght@300&display=swap");
+
+    .button1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .head {
+        font-size: 26px !important;
+    }
+
+    .h-1 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 33px;
+        color: #b10c72;
+    }
+
+    .h-2 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 33px;
+        color: #b10c72;
+    }
+
+    .h-3 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 33px;
+        color: #b10c72;
+    }
+
+    .h-4 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 33px;
+        color: #b10c72;
+    }
+
+    .h-5 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 33px;
+        color: #b10c72;
+    }
+
+    .h-6 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 33px;
+        color: #b10c72;
+    }
+
+    .h-7 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 33px;
+        color: #b10c72;
+    }
+
+    .h-8 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 33px;
+        color: #b10c72;
+    }
+
+    .h-9 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 33px;
+        color: #b10c72;
+    }
+
+    .h-10 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 33px;
+        color: #b10c72;
+    }
+
+    .h-11 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 33px;
+        color: #b10c72;
+    }
+
+    .h-12 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 33px;
+        color: #b10c72;
+    }
+
+    .contain {
+        max-width: 1324px !important;
+        display: flex;
+        align-items: center;
+    }
+
+    .learnblock .card {
+        height: 15.3em !important;
+        width: 19em;
+        padding: 0em 0.5em 0em 0.5em;
+        cursor: pointer;
+        position: relative;
+
+    }
+
+    .thecard {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform-style: preserve-3d;
+        transition: all 0.8s ease;
+        cursor: pointer;
+        background: none;
+    }
+
+    /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+    .rotate {
+        transform: rotateY(180deg);
+    }
+
+    /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+    .thefront {
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        overflow: hidden;
+    }
+
+    /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+    .theback {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        backface-visibility: hidden;
+        overflow: hidden;
+        color: #333;
+        text-align: center;
+        transform: rotateY(180deg);
+        /* background-image: linear-gradient(to top left, #ae0cb1e3, #f50411b0); */
+    }
+
+    .theb .learnblock .col {
+        padding: 0;
+    }
+
+    .learnblock .car-body {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        /* margin-bottom: 70px; */
+        position: relative;
+        /* bottom: 9px; */
+    }
+
+    .bt {
+        display: block !important;
+        height: 36px;
+    }
+
+    .btt {
+        display: block;
+        width: 53%;
+        height: 36px;
+    }
+
+    .cardmain:hover {
+        filter: drop-shadow(6px 6px 6px rgb(58, 57, 57));
+    }
+
+    /* .cardmain img {
+        filter: opacity(80%);
+        /* filter: blur(4px); */
+    /* } */
+
+    .bt:hover {
+        filter: drop-shadow(5px 5px 5px rgb(39, 39, 39)) !important;
+    }
+
+    .btt:hover {
+        filter: drop-shadow(5px 5px 5px rgb(39, 39, 39));
+    }
+
+    /* ----------button overlay on images---------- */
+
+    .bodyacc {
+        width: 209px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .learnblock .card {
+            margin: auto;
+        }
+
+        .learnblock .card-body {
+            padding: 0;
+            bottom: 8px;
+        }
+
+        .learnblock .btn {
+            margin: 4px !important;
+        }
+
+        .bodyacc {
+            display: flex;
+            width: 200px;
+        }
+    }
+</style>
